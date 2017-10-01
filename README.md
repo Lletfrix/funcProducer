@@ -150,6 +150,6 @@ The function will recieve both starting points to print in the console, (1,1) as
 ## Acknowledgments
 
 * Thanks to Dawnbringer for posting his 16-colour palette online: [Dawnbringer](http://pixeljoint.com/forum/forum_posts.asp?TID=12795)
-* This program started to make easy conversions from pixelart image to Linux terminal in order to use them in a C-Programmed videogame.
+* This program was made to help making easy conversions from pixelart image to Linux terminal in order to use them in a C Programmed videogame.
 * The code is poorly written and probably not easily understandable.
 
