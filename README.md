@@ -107,9 +107,13 @@ Now move to Produced folder and there should be a new directory with all your fi
 Here you will encounter nameOfYourImage.c, nameOfYourImage_full.c, nameOfYourImage.txt, and nameOfYourImage.png
 
 A little description about them:
+
 	1) nameOfYourImage.c - This is the pure print function, not compilable.
+
 	2) nameOfYourImage_full.c - This is the compilable program, will print your image.
+
 	3) nameOfYourImage.txt - Information about each pixel of the image.
+
 	4) nameOfYourImage.png - Your indexed alpha-free image.
 
 ### Printing my image
