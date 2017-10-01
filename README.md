@@ -46,6 +46,7 @@ DEEED6
 ```
 
 Finally you should be getting something like this:
+
 ![Alt text](/Source/PalettePreview/preview.png?raw=true "Terminal Colours")
 
 ### Installing
