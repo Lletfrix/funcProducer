@@ -4,7 +4,7 @@ This script turns a png image to a C-function
 
 ## Getting Started
 
-Please, understand C is limited in the graphically talking, so please consider some limitations.
+Please, understand C is limited graphically talking, so please consider some limitations.
 Usually, a resolution of a gba (240*160 px) is fine for most purposes, if you only want to print one static image then you can increase the resolution.
 
 ### Prerequisites
