@@ -11,7 +11,7 @@ png=$1$png
 img=$1$img
 
 mkdir ./Produced/$1
-mv ./Pending/$png $png
+mv ./Pending/$png ./Produced/$1/$png
 convert $png $t
 mv $png $1/$png
 ./img2func $t $fc full
