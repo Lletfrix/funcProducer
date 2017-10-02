@@ -61,7 +61,7 @@ or
 
 ```
 sudo chmod +x ./funcProducer.sh
-gcc -o img2fun ./Source/img2c.c
+gcc -o img2func ./Source/img2c.c
 ```
 
 Your binaries should have been created. Now you need to copy Dawnbringer16.gpl to your gimp palettes directory, assuming you have GIMP 2.8 you should try:
