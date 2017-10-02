@@ -4,6 +4,6 @@
 !*.*
 
 # Local Files
-./Pending/*
-./Produced/*
 
+/Produced
+Pending
