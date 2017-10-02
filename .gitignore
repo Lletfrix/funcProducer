@@ -1,0 +1,9 @@
+# Extensionless Files
+*
+!*/
+!*.*
+
+# Local Files
+./Pending/*
+./Produced/*
+
