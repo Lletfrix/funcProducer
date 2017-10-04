@@ -73,11 +73,11 @@ void print_header(FILE* fp, const char* filename) {
   fprintf(fp,"#define PX \"\\u2588\\u2588\"\n\n");
   fprintf(fp, "#define clear() printf(\"\\033[H\\033[J\")\n");
   fprintf(fp, "void gt(int x, int y){\n printf(\"\\033[%%d;%%dH\", x, y);\n}");
-  fprintf(fp,"void print_%s (int x_0, int y_0){\n\n", filename);
+  fprintf(fp,"void %s_print (int x_0, int y_0){\n\n", filename);
 }
 
 void print_header2(FILE*fp, const char* filename){
-  fprintf(fp,"void print_%s (int x_0, int y_0){\n\n", filename);
+  fprintf(fp,"void %s_print (int x_0, int y_0){\n\n", filename);
 }
 
 void print_end(FILE* fp){
@@ -120,7 +120,7 @@ int read_pixels (const char* filename, Image* img){
 
 void print_main(FILE* fp, const char* filename){
   if (!fp) return;
-  fprintf(fp, "void main() {\n\tclear();\n\tprint_%s(1,1);\n\tfflush(stdout);\n\twhile(1){}\n}", filename);
+  fprintf(fp, "void main() {\n\tclear();\n\t%s_print(1,1);\n\tfflush(stdout);\n\twhile(1){}\n}", filename);
 }
 
 int image_printfunc(const char* filename, Image* img, bool full){
@@ -157,7 +157,8 @@ int image_printfunc(const char* filename, Image* img, bool full){
       hcursor++;
       if(boolBlank){
         fseek(fp, -1*charWrited, SEEK_CUR);
-        charWrited=fprintf(fp, "gt((x_0 + %d), (y_0 + 2*%d));\n", hcursor, wcursor);
+        charWrited=fprintf(fp, "printf(\"\\n\");gt((x_0 + %d), (y_0 + 2*%d));\n", hcursor, wcursor);
+        charWrited-=13;
       }else{
         charWrited=fprintf(fp, "\"\\n\");\ngt((x_0 + %d), (y_0 + 2*%d));\n", hcursor, wcursor);
         charWrited -= 6;
