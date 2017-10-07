@@ -338,7 +338,7 @@ int main(int argc, char const *argv[]) {
   bool full;
   img = image_ini();
   if (argc < 4){
-    printf("usage: ./img2func <imageMagickOut.txt> <cfile.c> <full/func>\n In full/func just introduce any of those 2\n");
+    printf("usage: ./img2func <imageMagickOut.txt> <cfile.c> <full func>\n In full/func just introduce any of those 2\n");
   }
   if (0 == read_pixels(argv[1], img)){
     image_destroy(img);
