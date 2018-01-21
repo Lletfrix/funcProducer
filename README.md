@@ -1,3 +1,5 @@
+# Disclaimer
+This project is really useless but helped with the implementation of a futher library. STALE.
 # funcProducer - An Image to C-function converter
 
 This script turns a png image to a C-function
